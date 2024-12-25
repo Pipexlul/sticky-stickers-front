@@ -1,7 +1,7 @@
-import { Burger, Button, Container, Group, Title } from "@mantine/core";
+import { Box, Burger, Container, Group, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { Link } from "react-router";
 import { useState } from "react";
+import { Link } from "react-router";
 import * as classes from "./Header.css.ts";
 
 const links = [
@@ -14,7 +14,7 @@ export function Header() {
   const [active, setActive] = useState(links[0].link);
 
   const items = links.map((link) => (
-    <Button
+    <Box
       key={link.label}
       component={Link}
       to={link.link}
@@ -25,7 +25,7 @@ export function Header() {
       }}
     >
       {link.label}
-    </Button>
+    </Box>
   ));
 
   return (
