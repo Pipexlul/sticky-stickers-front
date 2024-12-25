@@ -35,7 +35,7 @@ export function Header() {
           {items}
         </Group>
 
-        {/*TODO: Add proper response menu*/}
+        {/*TODO: Add proper responsive menu*/}
         <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
     </header>
