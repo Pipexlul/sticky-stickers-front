@@ -1,9 +1,9 @@
-import {style} from "@vanilla-extract/css";
-import {vars} from "../../theme";
+import { style } from "@vanilla-extract/css";
+import { vars } from "../../theme";
 
 export const header = style({
-  height: '56px',
-  marginBottom: '120px',
+  height: "56px",
+  marginBottom: "120px",
   backgroundColor: vars.colors.body,
   borderBottom: `1px solid ${vars.colors.gray[3]}`,
 
@@ -15,10 +15,10 @@ export const header = style({
 });
 
 export const inner = style({
-  height: '56px',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
+  height: "56px",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
 });
 
 export const link = style({
@@ -30,12 +30,12 @@ export const link = style({
   color: vars.colors.gray[7],
   fontSize: vars.fontSizes.sm,
   fontWeight: 500,
-  
+
   selectors: {
     "&:hover": {
       backgroundColor: vars.colors.gray[0],
     },
-    
+
     [vars.darkSelector]: {
       color: vars.colors.dark[0],
     },
@@ -45,6 +45,6 @@ export const link = style({
     "&[data-mantine-color-scheme][data-active]": {
       backgroundColor: vars.colors.blue[6],
       color: vars.colors.white,
-    }
-  }
-})
+    },
+  },
+});

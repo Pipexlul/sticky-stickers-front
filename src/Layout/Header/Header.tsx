@@ -1,11 +1,11 @@
-import { useState }                        from 'react';
-import { Burger, Container, Group, Title } from '@mantine/core';
-import { useDisclosure }                   from '@mantine/hooks';
-import * as classes from './Header.css.ts';
+import { useState } from "react";
+import { Burger, Container, Group, Title } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import * as classes from "./Header.css.ts";
 
 const links = [
-  { link: '/home', label: 'Home' },
-  { link: '/order', label: 'Order' },
+  { link: "/home", label: "Home" },
+  { link: "/order", label: "Order" },
 ];
 
 export function Header() {

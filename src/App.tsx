@@ -2,9 +2,9 @@ import "@mantine/core/styles.css";
 
 import { MantineProvider } from "@mantine/core";
 
-import { Hero }            from "./Hero/Hero.tsx";
-import { Header }          from "./Layout/Header/Header.tsx";
-import { theme }           from "./theme";
+import { Hero } from "./Hero/Hero.tsx";
+import { Header } from "./Layout/Header/Header.tsx";
+import { theme } from "./theme";
 
 export default function App() {
   return (
