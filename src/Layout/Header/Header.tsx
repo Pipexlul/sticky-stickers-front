@@ -1,10 +1,11 @@
-import { useState } from "react";
-import { Burger, Container, Group, Title } from "@mantine/core";
+import { Burger, Button, Container, Group, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { Link } from "react-router";
+import { useState } from "react";
 import * as classes from "./Header.css.ts";
 
 const links = [
-  { link: "/home", label: "Home" },
+  { link: "/", label: "Home" },
   { link: "/order", label: "Order" },
 ];
 
@@ -13,18 +14,18 @@ export function Header() {
   const [active, setActive] = useState(links[0].link);
 
   const items = links.map((link) => (
-    <a
+    <Button
       key={link.label}
-      href={link.link}
+      component={Link}
+      to={link.link}
       className={classes.link}
       data-active={active === link.link || undefined}
-      onClick={(event) => {
-        event.preventDefault();
+      onClick={() => {
         setActive(link.link);
       }}
     >
       {link.label}
-    </a>
+    </Button>
   ));
 
   return (

@@ -1,17 +1,16 @@
 import "@mantine/core/styles.css";
 
 import { MantineProvider } from "@mantine/core";
+import { RouterProvider } from "react-router";
 
-import { Hero } from "./Hero/Hero.tsx";
-import { Header } from "./Layout/Header/Header.tsx";
+import router from "./routes/router.tsx";
 import { theme } from "./theme";
 
 export default function App() {
   return (
     // TODO: Decide if forced dark mode should be permanent
     <MantineProvider theme={theme} forceColorScheme="dark">
-      <Header />
-      <Hero />
+      <RouterProvider router={router} />
     </MantineProvider>
   );
 }

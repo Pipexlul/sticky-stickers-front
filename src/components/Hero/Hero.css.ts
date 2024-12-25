@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { vars } from "../theme";
+import { vars } from "../../theme.ts";
 
 // TODO: Adjust colors and images, hot pink is not chill guy enough for final version ;)
 export const root = style({
