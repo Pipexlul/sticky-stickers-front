@@ -1,14 +1,15 @@
 import "@mantine/core/styles.css";
+
 import { MantineProvider } from "@mantine/core";
-import { theme } from "./theme";
-import { Welcome } from "./Welcome/Welcome";
-import { ColorSchemeToggle } from "./ColorSchemeToggle/ColorSchemeToggle";
+
+import { Header }          from "./Layout/Header/Header.tsx";
+import { theme }           from "./theme";
 
 export default function App() {
   return (
-    <MantineProvider theme={theme}>
-      <Welcome />
-      <ColorSchemeToggle />
+    // TODO: Decide if forced dark mode should be permanent
+    <MantineProvider theme={theme} forceColorScheme="dark">
+      <Header />
     </MantineProvider>
   );
 }
